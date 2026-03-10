@@ -1,4 +1,4 @@
-name: Docker CI
+name: Docker CI/CD
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-deploy:
 
     runs-on: ubuntu-latest
 
@@ -23,3 +23,15 @@ jobs:
 
       - name: Push Docker image
         run: docker push giobetancourtmtz/backend-ci
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            docker pull giobetancourtmtz/backend-ci
+            docker stop backend-ci || true
+            docker rm backend-ci || true
+            docker run -d --name backend-ci -p 3000:80 giobetancourtmtz/backend-ci
