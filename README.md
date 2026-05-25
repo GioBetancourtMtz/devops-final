@@ -59,13 +59,7 @@ docker compose up -d --build
 ## Acceso
 
 ```bash
-http://192.168.100.15
-
-##Screenshots
-<img width="1366" height="768" alt="Estructura" src="https://github.com/user-attachments/assets/eeacb7c3-c7b7-4303-9e8f-3b5ef2969a4c" />
-<img width="1366" height="768" alt="docker" src="https://github.com/user-attachments/assets/ace1f567-a301-4c66-b2a6-3f80f04997b6" />
-<img width="1366" height="768" alt="Backends" src="https://github.com/user-attachments/assets/6596d4f8-5c28-491b-8492-8c0ec0d695b7" />
-:8080
+http://192.168.100.15:8080
 ```
 
 ---
@@ -87,3 +81,10 @@ Durante este proyecto se trabajó con:
 ## Autor
 
 Giovanni Betancourt
+
+
+
+##Screenshots
+<img width="1366" height="768" alt="Estructura" src="https://github.com/user-attachments/assets/eeacb7c3-c7b7-4303-9e8f-3b5ef2969a4c" />
+<img width="1366" height="768" alt="docker" src="https://github.com/user-attachments/assets/ace1f567-a301-4c66-b2a6-3f80f04997b6" />
+<img width="1366" height="768" alt="Backends" src="https://github.com/user-attachments/assets/6596d4f8-5c28-491b-8492-8c0ec0d695b7" />
