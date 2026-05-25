@@ -4,7 +4,7 @@ Proyecto de infraestructura multi-contenedor utilizando Docker Compose y Nginx c
 
 ---
 
-## 🚀 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - Docker
 - Docker Compose
@@ -16,7 +16,7 @@ Proyecto de infraestructura multi-contenedor utilizando Docker Compose y Nginx c
 
 ---
 
-## 🧠 Arquitectura
+## Arquitectura
 
 Cliente → Nginx Reverse Proxy → Backends Dockerizados
 
@@ -26,7 +26,7 @@ Cliente → Nginx Reverse Proxy → Backends Dockerizados
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Reverse Proxy con Nginx
 - Balanceo de carga entre múltiples contenedores
@@ -36,7 +36,7 @@ Cliente → Nginx Reverse Proxy → Backends Dockerizados
 
 ---
 
-## 📦 Estructura del proyecto
+## Estructura del proyecto
 
 ```bash
 backend-v1/
@@ -48,7 +48,7 @@ docker-compose.yml
 
 ---
 
-## ▶️ Cómo ejecutar el proyecto
+##  Cómo ejecutar el proyecto
 
 ```bash
 docker compose up -d --build
@@ -56,15 +56,18 @@ docker compose up -d --build
 
 ---
 
-## 🌐 Acceso
+## Acceso
 
 ```bash
-http://localhost:8080
+http://192.168.100.15<img width="1366" height="768" alt="Estructura" src="https://github.com/user-attachments/assets/eeacb7c3-c7b7-4303-9e8f-3b5ef2969a4c" />
+<img width="1366" height="768" alt="docker" src="https://github.com/user-attachments/assets/ace1f567-a301-4c66-b2a6-3f80f04997b6" />
+<img width="1366" height="768" alt="Backends" src="https://github.com/user-attachments/assets/6596d4f8-5c28-491b-8492-8c0ec0d695b7" />
+:8080
 ```
 
 ---
 
-## 📚 Aprendizajes
+##  Aprendizajes
 
 Durante este proyecto se trabajó con:
 
@@ -78,6 +81,6 @@ Durante este proyecto se trabajó con:
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Giovanni Betancourt
